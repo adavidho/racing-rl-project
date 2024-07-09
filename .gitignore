@@ -2,3 +2,4 @@ env
 old
 std.out
 artifacts/*
+exploration/test.ipynb

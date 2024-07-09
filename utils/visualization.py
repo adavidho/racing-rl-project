@@ -30,7 +30,7 @@ def generate_frames(
     continuous: bool = True,
     save_mode: bool = True,
     render_frames: bool = True,
-) -> None or list:
+) -> None|list:
     """
     Generate the frames for either the GIF to be saved
     or for rendering it straight away.
