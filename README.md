@@ -1,4 +1,8 @@
 # Reinforcement Learning Project
+
+<img src="https://github.com/adavidho/racing-rl-project/blob/main/artifacts/animation/td3_car_racer.gif" width="300" />
+
+
 ## Getting Started
 Clone the repository:
 ```
