@@ -1,0 +1,4 @@
+gymnasium[box2d]
+syne-tune[basic]
+stable-baselines3[extra]
+imageio
