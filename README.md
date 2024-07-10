@@ -16,4 +16,4 @@ Note: On an p3.16xlarge EC2 instance c.a. 27 hours.
 sceen -S rl
 jupyter nbconvert --to notebook --execute  --inplace td3_car_racing.ipynb
 ```
-Now you are ready to have som fun.
+Now you are ready to have some fun with reinforcement learning.
