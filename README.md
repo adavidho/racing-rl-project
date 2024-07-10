@@ -1,7 +1,10 @@
 # Reinforcement Learning Project
 
+This project explores the application of the TD3 algorithm to the CarRacing-v2 environment using OpenAI's Gym. Originally, we considered the Trackmania environment but switched to CarRacing-v2 due to resource limitations. Our aim was to train an autonomous agent to navigate a randomly generated race track with continuous control inputs.
+
 <img src="https://github.com/adavidho/racing-rl-project/blob/main/artifacts/animation/td3_car_racer.gif" width="300" />
 
+The project underscores the importance of hyperparameter tuning and demonstrates the practical deployment of reinforcement learning algorithms for complex control tasks.
 
 ## Getting Started
 Clone the repository:
