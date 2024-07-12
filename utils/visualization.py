@@ -41,7 +41,7 @@ def generate_frames(
 
     if save_mode:
         env = gym.make(env_id, continuous=continuous, render_mode="rgb_array")
-        env.reset()
+        obs = env.reset()
         frames = []
         step_count = 0
         terminated = False
@@ -49,7 +49,7 @@ def generate_frames(
             frame = env.render()
             frames.append(frame)
             action, _states = model.predict(obs)
-            state, reward, terminated, truncated, info = env.step(action)
+            obs, reward, terminated, truncated, info = env.step(action)
             step_count += 1
 
         env.close()
@@ -63,7 +63,7 @@ def generate_frames(
         while not terminated and step_count < 1000:
             env.render()
             action, _states = model.predict(obs)
-            state, reward, terminated, truncated, info = env.step(action)
+            obs, reward, terminated, truncated, info = env.step(action)
             step_count += 1
         env.close()
 
