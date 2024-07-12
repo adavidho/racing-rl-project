@@ -4,6 +4,7 @@ import logging
 
 
 def render_example(
+    model,
     env_id: str = "CarRacing-v2",
     continuous: bool = True,
     render_frames: bool = True,
@@ -15,6 +16,7 @@ def render_example(
     """
 
     frames = generate_frames(
+        model=model,
         env_id=env_id,
         continuous=continuous,
         save_mode=output_file != None,
@@ -26,11 +28,12 @@ def render_example(
 
 
 def generate_frames(
+    model,
     env_id: str = "CarRacing-v2",
     continuous: bool = True,
     save_mode: bool = True,
     render_frames: bool = True,
-) -> None|list:
+) -> None | list:
     """
     Generate the frames for either the GIF to be saved
     or for rendering it straight away.
@@ -45,10 +48,7 @@ def generate_frames(
         while not terminated and step_count < 1000:
             frame = env.render()
             frames.append(frame)
-            if continuous:
-                action = [0, 1, 0]
-            else:
-                action = 3
+            action, _states = model.predict(obs)
             state, reward, terminated, truncated, info = env.step(action)
             step_count += 1
 
@@ -57,18 +57,14 @@ def generate_frames(
 
     if render_frames:
         env = gym.make(env_id, continuous=continuous, render_mode="human")
-        env.reset()
+        obs = env.reset()
         step_count = 0
         terminated = False
         while not terminated and step_count < 1000:
             env.render()
-            if continuous:
-                action = [0, 1, 0]
-            else:
-                action = 3
+            action, _states = model.predict(obs)
             state, reward, terminated, truncated, info = env.step(action)
             step_count += 1
-
         env.close()
 
 
