@@ -24,3 +24,12 @@ sceen -S rl
 jupyter nbconvert --to notebook --execute  --inplace td3_car_racing.ipynb
 ```
 Now you are ready to have some fun with reinforcement learning.
+
+## Contributers
+
+The work load for this project was equally distributed between both contributers. The environment was selected together. 
+
+- Jan Henrik Bertrand: Researched the best reinforcement learning algorithm for this problem and documented findings in the project report. Furthermore he contributed to the evalutation section in the main notebook. 
+- David B. Hoffmann: Implemented Hyperparameter tuning with syne tune and the final model training. Furthermore he conducted all test runs and experiments and the setup of resources associated with them. 
+
+
