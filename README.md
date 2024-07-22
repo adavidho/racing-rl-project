@@ -1,8 +1,6 @@
 # Reinforcement Learning Project
 
-This project explores the application of the TD3 algorithm to the CarRacing-v2 environment using OpenAI's Gym. Originally, we considered the Trackmania environment but switched to CarRacing-v2 due to resource limitations. Our aim was to train an autonomous agent to navigate a randomly generated race track with continuous control inputs.
-
-<img src="https://github.com/adavidho/racing-rl-project/blob/main/artifacts/animation/td3_car_racer.gif" width="300" />
+This project explores the application of the TD3 algorithm to the CarRacing-v2 environment using OpenAI's Gym. Originally, we considered the Trackmania environment but switched to CarRacing-v2 due to resource limitations. Our aim was to train an autonomous agent to navigate a randomly generated racetrack with continuous control inputs.
 
 The project underscores the importance of hyperparameter tuning and demonstrates the practical deployment of reinforcement learning algorithms for complex control tasks.
 
@@ -27,9 +25,10 @@ Now you are ready to have some fun with reinforcement learning.
 
 ## Contributers
 
-The work load for this project was equally distributed between both contributers. The environment was selected together. 
+The work load for this project was equally distributed between both contributors. The environment was selected together. 
 
-- Jan Henrik Bertrand: Researched the best reinforcement learning algorithm for this problem and documented findings in the project report. Furthermore he contributed to the evalutation section in the main notebook. 
-- David B. Hoffmann: Implemented Hyperparameter tuning with syne tune and the final model training. Furthermore he conducted all test runs and experiments and the setup of resources associated with them. 
+- Jan Henrik Bertrand: Researched the best reinforcement learning algorithm for this problem and documented findings in the project report. Furthermore, he contributed to the evaluation section in the main notebook. 
+
+- David B. Hoffmann: Implemented Hyperparameter tuning with syne tune and the final model training. Furthermore, he conducted all the test runs and experiments and the setup of resources associated with them.
 
 
