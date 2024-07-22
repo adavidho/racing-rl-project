@@ -23,7 +23,7 @@ jupyter nbconvert --to notebook --execute  --inplace td3_car_racing.ipynb
 ```
 Now you are ready to have some fun with reinforcement learning.
 
-## Contributers
+## Contributors
 
 The work load for this project was equally distributed between both contributors. The environment was selected together. 
 
